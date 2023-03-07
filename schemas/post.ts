@@ -63,6 +63,26 @@ export default defineType({
       type: 'boolean',
     }),
     defineField({
+      name: 'repo',
+      title: 'Repo',
+      type: 'url'
+    }),
+    defineField({
+      name: 'web',
+      title: 'Web Link',
+      type: 'url'
+    }),
+    defineField({
+      name: 'android',
+      title: 'Android Link',
+      type: 'url'
+    }),
+    defineField({
+      name: 'ios',
+      title: 'iOS Link',
+      type: 'url'
+    }),
+    defineField({
       name: 'body',
       title: 'Body',
       type: 'blockContent',

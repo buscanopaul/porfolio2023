@@ -19,6 +19,10 @@ interface Post extends Base {
     company: string;
     description: string;
     isRelease: boolean;
+    repo: string;
+    webhook: string;
+    android: string;
+    ios: string;
 }
 
 interface Company extends Base {
