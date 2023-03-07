@@ -1,14 +1,16 @@
-import { faArrowTrendUp } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
-import Link from "next/link";
-import urlFor from "../lib/urlFor";
+import { faArrowTrendUp } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { PortableText } from '@portabletext/react';
+import Image from 'next/image';
+import Link from 'next/link';
+import urlFor from '../lib/urlFor';
+import { RichTextComponents } from './RichTextComponents';
 
 type Props = {
   image: object;
   duration: string;
   company: string;
-  description: string;
+  description: Block[];
   position: string;
   link: string;
   key: string;
@@ -43,7 +45,9 @@ function ExperienceItem({
       <h4 className="">{company}</h4>
       <h6 className="text-xs mb-2 text-gray-600">{position}</h6>
       <p className="text-gray-400 text-sm mb-3">{duration}</p>
-      <p className="text-sm mb-5">{description}</p>
+      <div className="text-sm mb-5">
+        <PortableText value={description} components={RichTextComponents} />
+      </div>
       <Link
         href={`${link}`}
         target="_blank"
