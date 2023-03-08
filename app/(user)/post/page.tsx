@@ -7,7 +7,7 @@ const query = groq`
     ...,
     author->,
     categories[]->
-  } | order(publishedAt desc)
+  }| order(publishedAt desc)
 `;
 
 export const revalidate = 30;
@@ -17,7 +17,7 @@ async function page() {
 
   return (
     <div className="max-screen-xl mx-auto py-14">
-      <OtherWork posts={posts} />
+      <OtherWork posts={posts} isActive={true} />
     </div>
   );
 }
