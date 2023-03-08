@@ -20,7 +20,7 @@ interface Post extends Base {
     description: string;
     isRelease: boolean;
     repo: string;
-    webhook: string;
+    web: string;
     android: string;
     ios: string;
 }

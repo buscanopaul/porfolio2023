@@ -62,7 +62,7 @@ function PostAttributes({ post }: Props) {
               ) : (
                 <Link
                   className="text-blue-500 font-bold"
-                  href="https://google.com"
+                  href={post.web}
                   target="_blank"
                 >
                   Web
