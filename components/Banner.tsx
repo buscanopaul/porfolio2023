@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 function Banner() {
   return (
@@ -10,9 +10,9 @@ function Banner() {
         <p className="text-center text-sm pt-5">
           4 years WordPress
           <br />2 years react-native
-          <br />6 months iOS/Swift/SwiftUI.
+          <br />9 months iOS/Swift/SwiftUI.
           <br />
-          Started learning react/NextJS
+          Started learning NextJS
           <br />
           This Website is powered by NextJS, tailwind, vercel, Sanity CMS
           <br />
@@ -20,7 +20,7 @@ function Banner() {
         </p>
         <Image
           className=""
-          src={require("../public/photo.png")}
+          src={require('../public/photo.png')}
           width={500}
           height={500}
           alt="Paul"
