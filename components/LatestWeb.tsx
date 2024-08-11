@@ -1,10 +1,10 @@
-import { PortableText } from '@portabletext/react';
-import Image from 'next/image';
-import urlFor from '../lib/urlFor';
-import LatestAttributes from './LatestAttributes';
-import { RichTextComponents } from './RichTextComponents';
-import ShowcaseSubtitle from './ShowcaseSubtitle';
-import ShowcaseTitle from './ShowcaseTitle';
+import { PortableText } from "@portabletext/react";
+import Image from "next/image";
+import urlFor from "../lib/urlFor";
+import LatestAttributes from "./LatestAttributes";
+import { RichTextComponents } from "./RichTextComponents";
+import ShowcaseSubtitle from "./ShowcaseSubtitle";
+import ShowcaseTitle from "./ShowcaseTitle";
 
 type Props = {
   post: Post;
@@ -35,7 +35,7 @@ function LatestWeb({ post }: Props) {
         color="bg-black"
         post={post}
         stack={post.author.name}
-        published={post.isRelease ? post.publishedAt.split('-')[0] : 'Soon'}
+        published="published"
         company={post.company}
       />
     </div>

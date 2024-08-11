@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import PostAttributesItem from './PostAttributesItem';
+import Link from "next/link";
+import PostAttributesItem from "./PostAttributesItem";
 
 type Props = {
   post: Post;
@@ -14,9 +14,7 @@ function PostAttributes({ post }: Props) {
           {post.author.name}
         </PostAttributesItem>
         <PostAttributesItem title="Company">{post.company}</PostAttributesItem>
-        <PostAttributesItem title="Published">
-          {post.isRelease ? post.publishedAt.split('-')[0] : 'Soon'}
-        </PostAttributesItem>
+        <PostAttributesItem title="Published">Published</PostAttributesItem>
       </div>
       <div className="flex flex-col">
         <div className="relative p-8">
@@ -37,7 +35,7 @@ function PostAttributes({ post }: Props) {
           <div className="relative p-8">
             <h2 className="text-2xl">Live</h2>
             <div>
-              {post?.categories[0]?.title === 'mobile' ? (
+              {post?.categories[0]?.title === "mobile" ? (
                 <>
                   {post?.android && (
                     <Link
